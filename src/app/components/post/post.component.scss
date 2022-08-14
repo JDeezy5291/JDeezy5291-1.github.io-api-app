@@ -1,0 +1,55 @@
+.post__container {
+    .post__searchbar {
+        display: flex;
+        @media only screen and (min-width: 768px) { 
+            max-width: 250px;
+        }
+        .post__searchInput {
+            width: 100%;
+            padding: 6px;
+            margin-top: 8px;
+            margin-bottom: 32px;
+            font-size: 10px;
+            background: var(--gray);
+            border: none;
+
+            &:focus {
+                color: var(--black);
+            }
+        }
+        button {
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-bottom: 32px;
+            background: var(--gray);
+            border: none;
+            font-size: 10px;
+            cursor: pointer;
+        }
+    }
+    .post__info {
+        h3 {
+            padding-top: 20px;
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+        p:nth-child(2) {
+            font-weight: bold;
+        }
+    }
+    .post__btnContainer {
+        display: flex;
+        justify-content: center;
+        .post__loadPostsBtn {
+            padding: 6px 10px;
+            margin: 32px 0;
+            background: var(--gray);
+            border: none;
+            font-size: 10px;
+            cursor: pointer;
+            &:hover {
+                background: var(--darkGray);
+            }
+        }
+    }
+}

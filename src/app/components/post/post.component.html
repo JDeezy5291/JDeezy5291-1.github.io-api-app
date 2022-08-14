@@ -1,0 +1,18 @@
+  <div class="post__container">
+    <div class="post__searchbar">
+      <input class="post__searchInput" id="uidValue" value="" placeholder="Filter by Title" type="text" />
+      <button (click)="filterPosts();" type="submit">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+    <div class="post__info">
+      <div *ngFor="let post of selectedListPosts">
+          <h3>{{post.title}}</h3>
+          <p>Author</p>
+          <p>{{post.body}}</p>
+      </div>
+    </div>
+    <div class="post__btnContainer" id="post__loadPostsBtn">
+      <button class="post__loadPostsBtn" (click)="loadPosts()">Load More</button>
+    </div>
+  </div>
